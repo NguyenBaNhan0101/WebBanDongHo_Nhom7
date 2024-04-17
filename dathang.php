@@ -54,7 +54,7 @@ $name ="Watch Shop";
 			 <label><input type="text"  class="form-control" placeholder="Nhập địa chỉ giao hàng   :" name="diachi"  required ></label>
 			 <br/>
 
-			<label><input type="date" class="form-control" placeholder="Ngày giao  :" name="date" id="datechoose"  required ></label>
+			<label><input type="date" class="form-control" placeholder="Ngày giao  :" name="ngay_giao" id="datechoose"  required ></label>
 			<label> Hình thức thanh toán :<select class="selectpicker" name="hinhthuctt">
     										<option value="ATM">Chuyển khoản</option>
     										<option value="Live">COD</option>
