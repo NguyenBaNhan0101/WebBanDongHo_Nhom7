@@ -75,12 +75,61 @@ $name ="Watch Shop";
 								<div class="well">
                                     <form name="form3" id="ff3" method="POST" action="">
                                         <input type="submit" name="submit" id="add-to-cart" class="btn btn-2" value="Thêm vào giỏ hàng" />
-                                        <!-- <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Mua ngay</a> -->
+                                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Mua ngay</a>
                                         <input type="hidden" name="acction" value="them vao gio hang" />
                                         <input type="hidden" name="idsp" value="<?php echo $row["ma_sp"] ?>" />
                                     </form>
 								</div>							
 								<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+    
+	<!-- Modal content-->
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<h4 class="modal-title" style="text-align: center">Thông tin khách hàng</h4>
+	  </div>
+	  <div class="modal-body">
+	  <p>Chức năng mua ngay giúp bạn mua nhanh mà không cần đăng nhập hoặc đặt hàng với một thông tin khác với thông tin trên tài khoản. Tuy nhiên bạn chỉ có thể mua một loại sản phẩm trong một lần đặt hàng, bạn nên đăng nhập để không phải nhập lại thông tin cũng như mua nhiều loại sản phẩm cùng lúc.</p>
+	  <form name="form6" id="ff6" method="POST" action="<?php include "cartnow.php" ?>">
+	  <div class="form-group">
+	  <input type="text" class="form-control" placeholder="Tên:" name="name" id="name" required>
+	  </div>
+					  <div class="form-group">
+						  <input type="email" class="form-control" placeholder="Email :" name="email" id="email" required>
+					  </div>
+					  <div class="form-group">
+						  <input type="tel" class="form-control" placeholder="Điện thoại :" name="phone" id="phone" required>
+					  </div>
+					  <div class="form-group">
+						  <input type="text" class="form-control" placeholder="Địa chỉ :" name="txtdiachi" id="txtdiachi" required>
+					  </div>
+					  <div class="form-group">
+						  <input type="number" class="form-control" placeholder="Số lượng:" name="txtsoluong" id="txtsoluong" required>
+					  </div>
+					  <div class="form-group">
+					  <label><input type="date" class="form-control" placeholder="Ngày giao  :" name="date" id="datechoose"  required ></label>
+					  </div>
+					  <div class="form-group">
+					  <label> Hình thức thanh toán :<select class="selectpicker" name="hinhthuctt">
+										  <option value="ATM">Chuyển khoản</option>
+										  <option value="Live">COD</option>
+											</optgroup>
+									  </select>
+									  </lable>
+					  </div>
+			  
+					  <input type="hidden" name="idsp" value="<?php echo $row["ma_sp"] ?>" />
+					  <input type="hidden" name="gia" value="<?php echo $row["don_gia"] ?>" />
+					  <button type="submit" name="muangay"  class="btn btn-1">Đặt hàng</button>
+	  </form>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+	  </div>
+	</div>
+	
+  </div>
                                 </div>
 							</div>
 						</div>

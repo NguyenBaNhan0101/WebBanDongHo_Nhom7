@@ -20,7 +20,7 @@ if(isset($_POST['Dat']))
                 $total= $_POST['total'];
                 $email =  $_SESSION['email'];
                 $ngaygiao = $_POST['ngay_giao'];
-                $tenkh = $_SESSION['ten_kh'] ;
+                $tenkh = $_SESSION['HoTen'] ;
                 $diachi = $_POST['diachi'];
                 $dienthoai =  $_SESSION['dienthoai'];
                 $hinhthuctt = $_POST['hinhthuctt']; 

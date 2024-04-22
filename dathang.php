@@ -49,7 +49,7 @@ $name ="Watch Shop";
 			 <div class="col-md-8" style="margin-left: 130px;">
 			 <label>Tên khách hàng : <?php echo  $_SESSION['HoTen']?></label>
 			 <label>Điện thoại: <?php echo  $_SESSION['dienthoai']?></label><br>
-			 <label>Email:<?php echo    $_SESSION['email']?></label>     
+			 <label>Email: <?php echo    $_SESSION['email']?></label>     
 			 <label><input type="text"  class="form-control" placeholder="Nhập địa chỉ giao hàng   :" name="diachi"  required ></label>
 			 <br/>
 
