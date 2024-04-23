@@ -17,7 +17,11 @@ if(isset($_POST['Dat']))
                 -- LEFT JOIN orderdetail o1 on o1.id_hd = o.id_hd
 				 WHERE  p.ma_sp  in ($str)";
 				$result = $conn->query($query);
-                $total= $_POST['total'];
+                $total= 0;
+                foreach ($_SESSION['cart'] as $key => $value) {
+                    $product = mysqli_fetch_assoc($conn->query("SELECT don_gia FROM product WHERE ma_sp = '$key'"));
+                    $total += $product['don_gia'] * $value;
+                }
                 $email =  $_SESSION['email'];
                 $ngaygiao = $_POST['ngay_giao'];
                 $tenkh = $_SESSION['HoTen'] ;

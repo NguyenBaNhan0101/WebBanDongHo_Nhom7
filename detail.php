@@ -99,7 +99,7 @@ $name ="Watch Shop";
 						  <input type="email" class="form-control" placeholder="Email :" name="email" id="email" required>
 					  </div>
 					  <div class="form-group">
-						  <input type="tel" class="form-control" placeholder="Điện thoại :" name="phone" id="phone" required>
+						  <input type="tel" class="form-control" placeholder="Điện thoại :" name="dienthoai" id="dienthoai" required>
 					  </div>
 					  <div class="form-group">
 						  <input type="text" class="form-control" placeholder="Địa chỉ :" name="txtdiachi" id="txtdiachi" required>
