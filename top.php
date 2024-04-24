@@ -29,7 +29,7 @@ $name ="Watch Shop";
 							       }
 							       else{
 							       	echo '<li><span class="glyphicon glyphicon-user"></span> Xin chào ' ; echo '<span style="color:Tomato;"><b>' . $_SESSION['HoTen'] . '</b></span></li>' ;
-							       	echo '<li><span class="glyphicon glyphicon-log-out"></span><a href="logout.php"> Đăng xuất!</a></li>';
+							       	echo '<li><span class="glyphicon glyphicon-log-out"></span><a href="logout.php"> Đăng xuất</a></li>';
 							       }
 
 							?>
