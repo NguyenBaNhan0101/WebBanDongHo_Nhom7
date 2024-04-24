@@ -1,3 +1,6 @@
+<?php
+ 	require "login.php";
+?>
 <?php 
 	include "head.php"
 	?>
